@@ -1,0 +1,17 @@
+/* Top Half */
+.stories {}
+.feature-sliders {}
+.second-sliders {}
+.third-block {}
+.ttu-home__doi {}
+.list-stories {}
+.more-stories {}
+
+/* Bottom Half */
+.tiles {}
+.tiles__photo:nth-child(1) {}
+.tiles__photo:nth-child(2) {}
+.tiles__photo:nth-child(3) {}
+.apply {}
+.tiles-nav {}
+.spirit-background {}

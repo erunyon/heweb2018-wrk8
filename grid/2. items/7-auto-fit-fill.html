@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Auto Fit/Fill</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../../demo.css">
+  <style>
+  .items {
+    display:grid;
+    grid-gap:1rem;
+    margin-bottom:2rem;
+  }
+  .auto-fill {grid-template-columns:repeat(auto-fill, minmax(350px, 1fr));}
+  .auto-fit {grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));}
+  </style>
+</head>
+<body>
+<h1>Auto Fit/Fill</h1>
+
+<p>works with minmax()</p>
+
+<h2>auto-fill</h2>
+<p>Creates empty columns when size allows.</p>
+<ul class="items auto-fill">
+  <li>1</li>
+  <li>2</li>
+</ul>
+
+<h2>auto-fit</h2>
+<ul class="items auto-fit">
+  <li>1</li>
+  <li>2</li>
+</ul>
+
+<footer>
+  <p>
+    <a href=""></a>
+  </p>
+</footer>
+
+</body>
+</html>

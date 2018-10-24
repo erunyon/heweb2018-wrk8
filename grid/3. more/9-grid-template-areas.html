@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Grid Template Areas</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../../demo.css">
+  <style>
+  .wrapper {
+    display:grid;
+    grid-gap:1rem;
+    grid-template-columns:400px 1fr 1fr;
+    grid-template-areas:
+      "header header  header"
+      "nav    content content"
+      "footer footer  footer"
+    ;
+  }
+  .header {grid-area:header;}
+  .nav {grid-area:nav;}
+  .content {grid-area:content;}
+  .footer {grid-area:footer;}
+
+  @media(min-width:700px){
+
+  }
+  @media(min-width:1000px){
+
+  }
+  </style>
+</head>
+<body>
+<h1>Grid Template Areas</h1>
+
+<div class="wrapper">
+  <header class="header item"><h1>Title of the Page</h1></header>
+  <div class="content item">
+    <p>Nunc nulla. Morbi vestibulum volutpat enim. Aenean imperdiet. Ut tincidunt tincidunt erat.</p>
+    <img src="https://placekitten.com/1200/400" alt="">
+    <p>Curabitur suscipit suscipit tellus. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Curabitur at lacus ac velit ornare lobortis. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor.</p>
+  </div>
+  <nav class="nav item">
+    <ul>
+      <li>Nav Item 1</li>
+      <li>Nav Item 2</li>
+      <li>Nav Item 3</li>
+    </ul>
+  </nav>
+  <footer class="footer item">&copy; 2018 CSS Grid Productions</footer>
+</div>
+
+<footer>
+  <p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas">MDN grid-template-areas</a>
+  </p>
+</footer>
+
+</body>
+</html>

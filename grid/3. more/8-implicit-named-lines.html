@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Implicit grid areas from named lines</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../../demo.css">
+  <style>
+  .wrapper {
+    display:grid;
+    grid-gap:1rem;
+    grid-template-columns: [nav-start] max-content [nav-end content-start] 1fr [content-end];
+    grid-template-rows: [header-start] max-content [header-end content-start] 1fr [content-end footer-start] max-content [footer-end];
+  }
+  .header {
+    grid-column:nav-start / content-end;
+    grid-row:header-start / header-end;
+  }
+  .nav {
+    grid-column:nav-start / nav-end;
+    grid-row:content-start / content-end;
+  }
+  .content {
+    grid-area:content;
+  }
+  .footer {
+    grid-column:nav-start / content-end;
+    grid-row:footer-start / footer-end;
+  }
+  </style>
+</head>
+<body>
+<h1>Implicit grid areas from named lines</h1>
+
+<div class="wrapper">
+  <header class="header item"><h1>Title of the Page</h1></header>
+  <div class="content item">
+    <p>Nunc nulla. Morbi vestibulum volutpat enim. Aenean imperdiet. Ut tincidunt tincidunt erat.</p>
+    <img src="https://placekitten.com/1200/400" alt="">
+    <p>Curabitur suscipit suscipit tellus. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Curabitur at lacus ac velit ornare lobortis. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor.</p>
+  </div>
+  <nav class="nav item">
+    <ul>
+      <li>Nav Item 1</li>
+      <li>Nav Item 2</li>
+      <li>Nav Item 3</li>
+    </ul>
+  </nav>
+  <footer class="footer item">&copy; 2018 CSS Grid Productions</footer>
+</div>
+
+<footer>
+  <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines">MDN Layout using named grid lines</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>St. John Fisher College</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../demo.css">
+  <style>
+    body {margin:2rem; font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;}
+    img {max-width: 100%;}
+    a {display:block; color:#fff; text-decoration: none; overflow: hidden; transition:ease 250ms, background ease 250ms, fill ease 250ms;}
+
+    .sections {text-align: center; transition: all ease .5s;}
+    .sections__title {width:80%; margin:auto; font-weight: 700; font-size: 1.5rem; text-shadow: 0 0 .5rem #000;}
+    .sections__item {transform-origin:top; position:relative; transition: all ease .5s;}
+
+    .sections__image { position:relative; width:200%; left:-50%; height:auto;}
+    .sections__image::before {position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-image: linear-gradient(rgba(0,0,0,.75),transparent); opacity: 0; content: ''; transition: opacity ease .5s;}
+    .sections__item:hover .sections__image::before,
+    .sections__item:hover .sections__info {opacity:1;}
+
+    /* Your Code Here */
+    @media screen and (min-width:1024px){
+      .sections {
+
+      }
+      .sections__item {
+
+      }
+        .sections__item:hover {z-index:1;}
+        .sections__item:hover .sections__image {width:100%; left:0;}
+      .sections__container {
+        position: relative;
+      }
+      .sections__content {
+        position: absolute;
+        top:2rem;
+        left:0;
+        font-size:.9rem;
+      }
+      .sections__info {
+        width:50%;
+        margin:0 auto;
+        padding:1rem 0;
+        opacity:0;
+        transition: opacity ease .5s;
+      }
+
+      .sections__item:nth-child(1) {}
+        .sections__item:nth-child(1):hover {}
+      .sections__item:nth-child(2) {}
+        .sections__item:nth-child(2):hover {}
+      .sections__item:nth-child(3) {}
+        .sections__item:nth-child(3):hover {}
+      .sections__item:nth-child(4) {}
+        .sections__item:nth-child(4):hover {}
+      .sections__item:nth-child(5) {}
+        .sections__item:nth-child(5):hover {}
+
+    }
+  </style>
+</head>
+<body>
+  <!-- https://www.jwu.edu/ -->
+  <div class="sections-container" id="main-content">
+    <div class="sections sections--5">
+        <a class="sections__item" href="campuses/providence/index.html">
+			    <div class="sections__container">
+				    <div class="sections__image"><img src="images/providence-1024x1024.jpg" alt=""></div>
+					<div class="sections__content">
+						<div class="sections__title">Providence</div>
+						<div class="sections__info">Our Providence Campus thrives on the Creative Capital's unique blend of New England college town and rising culinary, design and tech hub. Live, work and play in this dynamic city.</div>
+					</div>
+				</div>
+			</a>
+      <a class="sections__item" href="campuses/north-miami/index.html">
+			    <div class="sections__container">
+            <div class="sections__image"><img src="images/north-miami-1024x1024.jpg" alt=""></div>
+					<div class="sections__content">
+						<div class="sections__title">North Miami</div>
+						<div class="sections__info">South Florida is an international center of business, trade and tourism — and it's at your doorstep. You'll have the opportunity to apply what you've learned to internships in the region's tourism- and business-rich coastal corridor.</div>
+					</div>
+				</div>
+			</a>
+      <a class="sections__item" href="campuses/denver/index.html">
+			    <div class="sections__container">
+            <div class="sections__image"><img src="images/denver-1024x1024.jpg" alt=""></div>
+					<div class="sections__content">
+						<div class="sections__title">Denver</div>
+						<div class="sections__info">The Denver Campus sits on 26 park-like acres just 10 minutes from downtown Denver. Being so close to the Rocky Mountains spells career opportunity for those interested in sports event management, casinos and adventure tourism.</div>
+					</div>
+				</div>
+			</a>
+      <a class="sections__item" href="campuses/charlotte/index.html">
+			    <div class="sections__container">
+            <div class="sections__image"><img src="images/charlotte-1024x1024.jpg" alt=""></div>
+					<div class="sections__content">
+						<div class="sections__title">Charlotte</div>
+						<div class="sections__info">The Queen City is home to multiple Fortune 500 companies, including Bank of America, NASCAR and Lowe's — creating a business-friendly environment with a wealth of internship and career opportunities.</div>
+					</div>
+				</div>
+			</a>
+      <a class="sections__item" href="https://online.jwu.edu" target="_blank">
+			    <div class="sections__container">
+            <div class="sections__image"><img src="images/online-1024x1024.jpg" alt=""></div>
+					<div class="sections__content">
+						<div class="sections__title">Online</div>
+						<div class="sections__info">You are professionally focused. So are we. JWU's College of Online Education offers the same high-quality programs that have defined our 100-year history.</div>
+					</div>
+				</div>
+			</a>
+	</div>
+</div>
+</body>
+</html>

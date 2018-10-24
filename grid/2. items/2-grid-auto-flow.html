@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Auto Flow</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../../demo.css">
+  <style>
+  .items {
+    display:grid;
+    grid-gap:1rem;
+    grid-template-columns:repeat(4, 1fr);
+  }
+  .items li:nth-child(3){
+    grid-column:span 2;
+    background:goldenrod;
+  }
+  </style>
+</head>
+<body>
+<h1>Auto Flow</h1>
+
+<ul class="items">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+</ul>
+
+<footer>
+  <p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow">MDN Auto Flow</a>
+  </p>
+</footer>
+
+</body>
+</html>
