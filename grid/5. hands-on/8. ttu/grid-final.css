@@ -1,0 +1,50 @@
+/* Top Half */
+.stories {
+  display:grid;
+  grid-template-columns:29vw 29vw 26vw 16vw; /* 480 (29), 480 (29), 430 (26), 260 (16)  (1655)*/
+  grid-template-rows:265px 165px 265px 220px 265px; /* 265, 165, 265, 220, 265  (1200)*/
+}
+.feature-sliders {
+  grid-column:1 / span 2;
+  grid-row:1 / span 3;
+}
+.second-sliders {
+  grid-column:3;
+  grid-row:1 / span 2;
+}
+.third-block {
+  grid-column:4;
+  grid-row:3;
+}
+.ttu-home__doi {
+  grid-column:4;
+  grid-row:1;
+  z-index:1;
+  display:flex;
+  align-items:center;
+}
+.list-stories {
+  grid-column:3;
+  grid-row:3 / span 3;
+}
+.more-stories {
+  grid-column:4;
+  grid-row:5;
+}
+
+/* Bottom Half */
+/*
+cols: 470 (28) 490 (30) 695 (42) / 1655
+rows: 120 370 180 400 440
+*/
+.tiles {
+  display: grid;
+  grid-template-columns:28vw 30vw 42vw;
+  grid-template-rows:120px repeat(4, auto);
+}
+.tiles__photo:nth-child(1) {grid-column:3; grid-row:1 / span 2;}
+.tiles__photo:nth-child(2) {grid-column:1 / span 2; grid-row:2 / span 2;}
+.tiles__photo:nth-child(3) {grid-column:3; grid-row:3 / span 3;}
+.apply {grid-column:1; grid-row:4; display:flex; align-items:center;}
+.tiles-nav {grid-column:2; grid-row:4 / span 2;}
+.spirit-background {grid-column:1 / span 2; grid-row:4 / span 2;}
