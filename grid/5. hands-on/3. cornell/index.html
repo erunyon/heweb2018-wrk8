@@ -32,6 +32,11 @@
     @media screen and (min-width:800px){
       .media-overlay { padding: 32px; }
       a.media-box.active .media-rollover, a.media-box:focus .media-rollover, a.media-box:hover .media-rollover { opacity: 1; }
+
+      .container {
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
     }
   </style>
 </head>
@@ -40,7 +45,6 @@
 
   <div class="academics-classroom section">
       <div class="container">
-        <div class="top-block">
           <div class="academics-classroom-overview" data-click-action="in the classroom">
             <h3 class="cu-title">
               In the Classroom
@@ -64,8 +68,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="bottom-block">
+
+        
           <div class="academics-classroom-quote">
             <blockquote>
               "Cornell is known not only for its breadth of choices, but for the unconventional nature of some of them as well."
@@ -192,7 +196,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    
 
 
 </body>

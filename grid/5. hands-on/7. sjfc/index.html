@@ -25,13 +25,17 @@
     .collage__container--red a {color:#f7d778;}
 
     /* Your Code Here */
-    .collage {}
-    .item1 {}
-    .item2 {}
-    .item3 {}
-    .item4 {}
-    .item5 {}
-    .item6 {}
+    .collage {
+      display: grid;
+      grid-template-columns:100px 1fr 100px 100px 1fr;
+      grid-template-rows:30px repeat(5, 300px);
+    }
+    .item1 {grid-row:2; grid-column:1/5; z-index:1;}
+    .item2 {grid-row:1/span 3; grid-column:4/6;}
+    .item3 {grid-row:4; grid-column:3/6; z-index:1;}
+    .item4 {grid-row:3/span 2; grid-column:1/4;}
+    .item5 {grid-row:5; grid-column:2/5; z-index:1;}
+    .item6 {grid-row:5 / span 2; grid-column:4/6;}
   </style>
 </head>
 <body>

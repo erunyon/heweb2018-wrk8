@@ -17,20 +17,19 @@
 
     @media screen and (min-width:800px){
       .container {
-
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-auto-flow: dense;
       }
-      .block-img-left {}
-      .block-img-right {}
+      .block-img-left {grid-column:1;}
+      .block-img-right {grid-column:2;}
       .block-img img {
         object-fit:cover;
         width:100%;
         height:100%;
       }
-      .block-txt-left {}
-      .block-txt-right {}
-      .block-txt-2 {}
-      .block-txt-4 {}
-      .block-txt-6 {}
+      .block-txt-left {grid-column:1;}
+      .block-txt-right {grid-column:2;}
     }
   </style>
 </head>

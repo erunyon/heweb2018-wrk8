@@ -17,11 +17,19 @@
     footer {padding:1rem 2rem; background:#dadada;}
 
     @media screen and (min-width:600px){
-      body {}
-      header {}
-      nav {}
-      main {}
-      footer {}
+      body {
+        display:grid;
+        grid-template-columns:300px 1fr;
+        grid-template-areas:
+          "head head head"
+          "nav  main main"
+          "foot foot foot"
+        ;
+      }
+      header {grid-area:head;}
+      nav {grid-area: nav;}
+      main {grid-area:main;}
+      footer {grid-area:foot;}
 
     }
   </style>

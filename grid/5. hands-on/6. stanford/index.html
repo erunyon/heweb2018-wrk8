@@ -24,23 +24,32 @@
 
     /* Your Code Here */
     @media screen and (min-width:600px){
-      .grid-container {}
+      .grid-container {
+        display: grid;
+        grid-gap:1rem;
+        grid-template-columns:repeat(2, minmax(260px, 1fr));
+        grid-template-rows:repeat(2, 350px);
+      }
       figure {display:block;}
-      article.theme--choco {}
-      .theme--choco {}
-      .theme--choco figure {}
-      .theme--choco .content {background:linear-gradient(180deg,transparent,rgba(0,0,0,.85) 80%);}
+      article.theme--choco {grid-column:span 2;}
+      .theme--choco {
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:repeat(3, 1fr);
+      }
+      .theme--choco figure {grid-row:1/-1; grid-column:1/-1; max-height:none;}
+      .theme--choco .content {grid-row:3/4; grid-column:1/-1; background:linear-gradient(180deg,transparent,rgba(0,0,0,.85) 80%);}
       .theme--choco .post-category {color:#fff; text-shadow:rgba(0,0,0,.6) 0 0 2px;}
       .theme--choco h3 a {color:#fff;}
     }
 
     @media screen and (min-width:768px){
-      .grid-container {}
+      .grid-container {grid-template-columns:repeat(3, minmax(230px, 1fr));}
     }
 
     @media screen and (min-width:1024px){
-      .grid-container {}
-      article:last-child {}
+      .grid-container {grid-template-columns:repeat(4, minmax(220px, 1fr));}
+      article:last-child {display:grid;}
     }
   </style>
 </head>

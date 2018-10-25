@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Cornell</title>
+  <title>Xavier</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="../../../demo.css">
@@ -18,9 +18,15 @@
     .center-block { display: block; margin: 0 auto; }
 
     @media screen and (min-width:600px){
-      .row {}
-      .col-sm-6 {}
-      .col-sm-4 {}
+      .row {
+        width:80%;
+        margin:0 auto;
+        display:grid;
+        grid-gap:30px;
+        grid-template-columns: repeat(6,1fr);
+      }
+      .col-sm-6 {grid-column:auto / span 3;}
+      .col-sm-4 {grid-column:auto / span 2;}
     }
   </style>
 </head>
